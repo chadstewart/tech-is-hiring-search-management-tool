@@ -1,0 +1,25 @@
+.tweet-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-container div {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.tweet-header, .tweet-header > a {
+    display: flex;
+}
+
+.tweet-user-avatar a > img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .tweet-header, .tweet-header > a {
+        flex-direction: column;
+    }
+}

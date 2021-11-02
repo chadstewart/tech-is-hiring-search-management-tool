@@ -1,0 +1,15 @@
+.search-results-container {
+    display: flex;
+    border: 1px solid black;
+}
+
+.search-results-container > div {
+    margin: 5px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .search-results-container {
+        flex-direction: column;
+    }
+}
