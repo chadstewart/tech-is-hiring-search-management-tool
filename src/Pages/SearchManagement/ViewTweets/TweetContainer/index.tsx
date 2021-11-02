@@ -5,19 +5,19 @@ export default function TweetContainer(props: {
     userAvatar: string,
     tweetBody: string,
     tweetDatePosted: string
-}) {
+})
+
+{
     return (
         <div className="tweet-container">
             <div className="tweet-header">
-                <div className="tweet-user-avatar">
-                    <a href={"https://www.twitter.com/" + props.username}>
+                <div className="tweet-user-details">
+                    <a target="blank" href={"https://www.twitter.com/" + props.username}>
                         <img alt={"Avatar for " + props.username} src={props.userAvatar} />
                     </a>
+                    <a target="blank" href={"https://www.twitter.com/" + props.username}>@{props.username}</a>
                 </div>
-                <div className="tweet-username">
-                    <a href={"https://www.twitter.com/" + props.username}>@{props.username}</a>
-                </div>
-                <div className="spacer">·</div>
+                <div className="spacer"> | </div>
                 <div className="tweet-date-posted">{props.tweetDatePosted}</div>
             </div>
             <div className="tweet-body">

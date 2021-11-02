@@ -9,17 +9,29 @@
     border: 1px solid black;
 }
 
-.tweet-header, .tweet-header > a {
+.tweet-header {
     display: flex;
 }
 
-.tweet-user-avatar a > img {
+.tweet-user-details {
+    display: flex;
+}
+
+.tweet-user-details > a {
+    margin: 0px 5px;
+}
+
+.tweet-user-details a > img {
     width: 45px;
     border-radius: 50%;
 }
 
 @media only screen and (max-width: 768px) {
-    .tweet-header, .tweet-header > a {
+    .tweet-header {
         flex-direction: column;
+    }
+
+    .spacer {
+        display: none;
     }
 }
