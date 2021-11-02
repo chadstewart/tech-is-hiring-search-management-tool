@@ -32,6 +32,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .tweet-container {
+        width: 94%;
+    }
+
     .tweet-header {
         flex-direction: column;
     }
