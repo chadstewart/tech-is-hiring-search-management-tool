@@ -27,6 +27,10 @@
     border-radius: 50%;
 }
 
+.tweet-user-details > #tweet-username {
+    padding-top: 15px;
+}
+
 @media only screen and (max-width: 768px) {
     .tweet-header {
         flex-direction: column;
