@@ -12,12 +12,12 @@ export default function TweetContainer(props: {
         <div className="tweet-container">
             <div className="tweet-header">
                 <div className="tweet-user-details">
-                    <a target="blank" href={"https://www.twitter.com/" + props.username}>
+                    <a target="blank" href={`https://www.twitter.com/${props.username}`}>
                         <img alt={"Avatar for " + props.username} src={props.userAvatar} />
                     </a>
                     <a id="tweet-username"
                        target="blank"
-                       href={"https://www.twitter.com/" + props.username}>
+                       href={`https://www.twitter.com/${props.username}`}>
                            @{props.username}
                     </a>
                 </div>
