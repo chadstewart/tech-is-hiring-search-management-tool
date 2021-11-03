@@ -13,14 +13,14 @@ const testTweet = {
 const tweetArray = [testTweet, testTweet, testTweet];
 
 export default function ViewTweets() {
-    return <div>
+    return <main>
         {
             tweetArray.map(tweetObject => {
-                return <div className="search-results-container">
+                return <section className="search-results-container">
                     <TweetContainer {...tweetObject} />
                     <TweetsActions />
-                </div>
+                </section>
             })
         }
-    </div>;
+    </main>;
 }
