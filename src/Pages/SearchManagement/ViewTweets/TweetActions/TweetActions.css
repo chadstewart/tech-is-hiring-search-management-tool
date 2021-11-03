@@ -1,0 +1,17 @@
+.tweet-actions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.tweet-actions-option {
+    margin: 5px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .tweet-actions-container {
+        flex-direction: row;
+    }
+}

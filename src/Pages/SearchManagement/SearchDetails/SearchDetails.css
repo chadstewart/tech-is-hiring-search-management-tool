@@ -1,0 +1,22 @@
+.search-details-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.search-details-container > div {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.search-details-right {
+    display: flex;
+}
+
+#search-attribute-title {
+    text-align: right;
+    margin-right: 10px;
+}
