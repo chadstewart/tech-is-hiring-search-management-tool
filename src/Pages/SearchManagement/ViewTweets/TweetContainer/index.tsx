@@ -10,12 +10,17 @@ export default function TweetContainer(props: {
 {
     return (
         <div className="tweet-container">
-            <div className="tweet-header">
+            <header className="tweet-header">
                 <div className="tweet-user-details">
-                    <a target="blank" href={`https://www.twitter.com/${props.username}`}>
-                        <img alt={"Avatar for " + props.username} src={props.userAvatar} />
+                    <a aria-hidden="true"
+                       tabIndex={-1}
+                       target="blank"
+                       rel="noopener noreferrer"
+                       href={`https://www.twitter.com/${props.username}`}>
+                        <img alt="" src={props.userAvatar} />
                     </a>
                     <a id="tweet-username"
+                       rel="noopener noreferrer"
                        target="blank"
                        href={`https://www.twitter.com/${props.username}`}>
                            @{props.username}
@@ -23,9 +28,9 @@ export default function TweetContainer(props: {
                 </div>
                 <div className="spacer"> | </div>
                 <div className="tweet-date-posted">{props.tweetDatePosted}</div>
-            </div>
+            </header>
             <div className="tweet-body">
-                <div className="tweet-body-content">{props.tweetBody}</div>
+                <p className="tweet-body-content">{props.tweetBody}</p>
             </div>
         </div>
     );

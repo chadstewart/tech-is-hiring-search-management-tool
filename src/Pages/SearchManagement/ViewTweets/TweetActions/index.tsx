@@ -9,13 +9,13 @@ export default function TweetsActions() {
     }
 
     return (
-        <div className="tweet-actions-container">
+        <aside className="tweet-actions-container">
             <button className="tweet-actions-option" onClick={() => handleAction("full")}>
                 Send full Tech Is Hiring Inquiry
             </button>
             <button className="tweet-actions-option" onClick={() => handleAction("abridged")}>
                 Send shortened Tech Is Hiring Inquiry
             </button>
-        </div>
+        </aside>
     );
 }
