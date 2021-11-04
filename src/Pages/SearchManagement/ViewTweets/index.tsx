@@ -16,10 +16,10 @@ export default function ViewTweets() {
     return <main>
         {
             tweetArray.map(tweetObject => {
-                return <section className="search-results-container">
+                return <article className="search-results-container">
                     <TweetContainer {...tweetObject} />
                     <TweetsActions />
-                </section>
+                </article>
             })
         }
     </main>;
